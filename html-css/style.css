@@ -217,13 +217,13 @@ background-color: var(--main-color);
    width: 100%;
 }
 
-.has.val.input-form + .focus-input-form::after {
+.has-val.input-form + .focus-input-form::after {
     top: -20px;
     font-size: 15px;
 
 }
 
-.has.val.input-form + .focus-input-form::before {
+.has-val.input-form + .focus-input-form::before {
    width: 100%;
 }
 
