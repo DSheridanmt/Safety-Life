@@ -6,39 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Login - Safety Life</title>
-    <style>
-        body {
-            background-color: #76d194;
-            color: #ffffff;
-            text-align: center;
-        }
-        a {
-            color: black;
-            background-color: #ffffff;
-            font-size: 40px;
-            border-radius: 3px;
-            border-style: groove;
-        }
-        div {
-            margin: auto;
-            padding-top: 200px;
-            padding-bottom: 100px;
-            padding-left: 250px;
-            padding-right: 250px;
-            text-align:center;
-            margin-left: auto;
-            margin-right: auto;
-            float: left;
-        }
-    </style>
+    <link rel="stylesheet" href ="style.css" />
+    
+    
 </head>
 <body>
-    <h1>Crie uma nova conta, ou logue na sua.</h1>
-    <div>
-        <a href="index.html">Cadastre-se</a>
+    <div class="container">"
+        <div class = "container-login">
+            <div class = "wrap-login">
+                <form class= "login-form">
+                    <span class= "login-form-title">
+                        Faça o login
+                    </span>
+                   
+                    <div class=  "wrap-input margin-top-35 margin-bottom-35">
+                        <input class ="input-form" type="email" name= "email" autocomplete="off" />
+                        <span class="focus-input-form" data-placeholder = "E-mail">
+
+                    </div>
+                    
+                    <div class=  "wrap-input  margin-bottom-35">
+                        <input class ="input-form" type="password" name= "password"  />
+                        <span class="focus-input-form" data-placeholder = "Senha">
+
+                    </div>
+                    <div class= "container-login-form-btn">
+                        <button class="login-form-btn">Login</button>
+                    </div>
+                    
+                    <ul class= "login-utils">
+                        <li class="margin-top-8 margin-bottom-8">
+                            <span class= "text1">
+                                Esqueceu sua
+                            </span>
+                            <a href="#" class="text2"> 
+                                senha?
+                            </a>
+
+                        </li>
+                        <span class= "text1">
+                            Não tem conta?
+                        </span>
+                        <a href="#" class="text2"> 
+                           Criar
+                            
+                        
+                        <li></li>
+
+                    </ul>
+               
+                </form>
+            </div>
+            <img src="imagens/login.png" alt="Login" width="300" height="300" class= "margin-left-50"/>
+            
+        </div>
     </div>
-    <div>
-        <a href="index.html">Login</a>
-    </div>
+    
+    <script>
+        let inputs = document.getElementsByClassName("input.form");
+        for(let input of inputs) {
+            input.addEventListener("blur", function(){
+                if(input.value.trim() != "") {
+                    input.classList.add("has.val")
+                }  else {
+                    input.classList.remove("has.val")
+                }
+            });
+        }
+
+    </script>
+    
+
+
 </body>
 </html>
