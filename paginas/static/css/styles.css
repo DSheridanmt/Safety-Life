@@ -64,8 +64,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-color: #232921;
+  --bs-body-bg: rgb(255, 255, 255);
 }
 
 *,
@@ -3946,7 +3946,7 @@ textarea.form-control-lg {
   color: #dee2e6;
 }
 .dropdown-menu-dark .dropdown-header {
-  color: #adb5bd;
+  color: #addb5b;
 }
 
 .btn-group,
