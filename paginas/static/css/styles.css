@@ -90,7 +90,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(211, 19, 19, 0);
 }
 
 hr {
@@ -2029,7 +2029,7 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #e0eceb;
+  --bs-table-bg: #e2ece0;
   --bs-table-striped-bg: #d5e0df;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #cad4d4;
