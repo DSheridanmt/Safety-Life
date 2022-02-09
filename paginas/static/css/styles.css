@@ -3034,8 +3034,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #00b928;
+  border-color: #00b928;
 }
 .btn-primary:hover {
   color: #fff;
@@ -4202,6 +4202,7 @@ textarea.form-control-lg {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
+  border-color: #00b928;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -11606,7 +11607,7 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background-color: #158093;
+  background-color: #00b928;
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11641,7 +11642,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background-color:rgb(43, 255, 0);
+  background-color: #00b928;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
