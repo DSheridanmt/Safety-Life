@@ -21,11 +21,8 @@ class ExerciciosView(TemplateView):
 class PerfilView(TemplateView):
     template_name ='perfil.html'
 
-class SobreView(TemplateView):
-    template_name ='sobre.html'
-
 class CadastroView(TemplateView):
     template_name ='cadastro.html'
 
-class LogoutView(TemplateView):
-    template_name ='logout.html'
+
+   
