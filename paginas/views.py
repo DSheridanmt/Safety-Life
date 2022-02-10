@@ -24,5 +24,4 @@ class PerfilView(TemplateView):
 class CadastroView(TemplateView):
     template_name ='cadastro.html'
 
-
    
