@@ -12,11 +12,10 @@ class HomeView(TemplateView):
 class LoginView(TemplateView):
     template_name  = 'login.html'
 
-class ReceitasView(TemplateView):
-    template_name = 'receitas.html'
+class PublicaçõesView(TemplateView):
+    template_name = 'publicaçoess.html'
 
-class ExerciciosView(TemplateView):
-    template_name ='exercicios.html'
+
 
 class PerfilView(TemplateView):
     template_name ='perfil.html'
