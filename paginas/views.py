@@ -10,8 +10,8 @@ class HomeView(TemplateView):
 class LoginView(TemplateView):
     template_name  = 'login.html'
 
-class PublicaçoesView(TemplateView):
-    template_name = 'publicaçoes.html'
+class PublicacoesView(TemplateView):
+    template_name = 'publicacoes.html'
 
 class AdminView(TemplateView):
     template_name = 'admin.html'
