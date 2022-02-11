@@ -1,10 +1,9 @@
 from django.urls import path
-from .views import CadastroView, HomeView, LoginView, PerfilView, PublicaçõesView
+from .views import HomeView, LoginView, PublicaçõesView, AdminView
 urlpatterns = [ 
-    path('', HomeView.as_view(), name= 'home'),
+    path('index/', HomeView.as_view(), name= 'index'),
     path('login/', LoginView.as_view(), name = 'login'),
-    path('perfil/', PerfilView.as_view(), name= 'perfil'),
-    path('cadastro/', CadastroView.as_view(), name= 'cadastro'),
+    path('admin/', AdminView.as_view(), name= 'admin'),
     path('publicaçoes/', PublicaçõesView.as_view(), name= 'publicaçoes'),
    
     

@@ -16,11 +16,6 @@ class PublicaçõesView(TemplateView):
     template_name = 'publicaçoess.html'
 
 
-
-class PerfilView(TemplateView):
-    template_name ='perfil.html'
-
-class CadastroView(TemplateView):
-    template_name ='cadastro.html'
-
+class AdminView(TemplateView):
+    template_name = 'admin.html'
    
