@@ -1,5 +1,3 @@
-
-
 # Create your views here.
 
 from django.views.generic import TemplateView
@@ -12,10 +10,11 @@ class HomeView(TemplateView):
 class LoginView(TemplateView):
     template_name  = 'login.html'
 
-class PublicaçõesView(TemplateView):
-    template_name = 'publicaçoess.html'
-
+class PublicaçoesView(TemplateView):
+    template_name = 'publicaçoes.html'
 
 class AdminView(TemplateView):
     template_name = 'admin.html'
+
+
    
