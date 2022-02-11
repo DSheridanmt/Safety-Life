@@ -15,8 +15,6 @@ class LoginView(TemplateView):
 class PublicaçõesView(TemplateView):
     template_name = 'publicaçoess.html'
 
-
-
 class PerfilView(TemplateView):
     template_name ='perfil.html'
 
