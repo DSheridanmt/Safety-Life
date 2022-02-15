@@ -9,7 +9,7 @@ class Admin(models.Model):
     nome = models.CharField(max_length=50)
     senha = models.CharField(max_length=20)
     email = models.EmailField(max_length=30)
-    id = models.ForeignKey(max_length=14,on_delete=models.PROTECT)
+
     def __str__(self):
         return self.nome
 
@@ -24,7 +24,6 @@ class Publicacao(models.Model):
     descricao = models.TextField(max_length=200, verbose_name='Descrição')
     data_Atualizacao = models.DateField(auto_now=False, auto_now_add=True)
     hora = models.TimeField(auto_now=False, auto_now_add=True)
-    id_Admin = models.ForeignKey(ID, on_delete=models.PROTECT)
     id_Publicação= models.CharField(max_length=14, verbose_name= 'ID da publicação')
     tag = models.ForeignKey(Tag, on_delete=models.PROTECT)
 
