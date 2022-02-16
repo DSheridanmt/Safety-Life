@@ -5,14 +5,6 @@ from django.db.models.fields.related import ForeignKey
 
 # Create your models here.
 
-class Admin(models.Model):
-    nome = models.CharField(max_length=50)
-    senha = models.CharField(max_length=20)
-    email = models.EmailField(max_length=30)
-
-    def __str__(self):
-        return self.nome
-
 class Tag(models.Model):
     nomeTag = models.CharField(max_length= 20, verbose_name='Tag')
 
@@ -26,6 +18,7 @@ class Publicacao(models.Model):
     hora = models.TimeField(auto_now=False, auto_now_add=True)
     id_Publicação= models.CharField(max_length=14, verbose_name= 'ID da publicação')
     tag = models.ForeignKey(Tag, on_delete=models.PROTECT)
+    
 
     def __str__(self):
         return self.titulo

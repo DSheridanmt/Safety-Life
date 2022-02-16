@@ -13,8 +13,7 @@ class LoginView(TemplateView):
 class PublicacoesView(TemplateView):
     template_name = 'publicacoes.html'
 
-class AdminView(TemplateView):
-    template_name = 'admin.html'
+
 
 
    
