@@ -11505,20 +11505,20 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: #00b928;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11535,7 +11535,7 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #00b928;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
