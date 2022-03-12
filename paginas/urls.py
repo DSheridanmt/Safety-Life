@@ -7,6 +7,7 @@ urlpatterns = [
    
     path('publicacoes/', PublicacoesView.as_view(), name= 'publicacoes'),
 
-    path('sobre/', SobreView.as_view(), name='sobre')
+    path('sobre/', SobreView.as_view(), name='sobre'),
+
 
 ]

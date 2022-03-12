@@ -16,6 +16,8 @@ class Tag(models.Model):
     def __str__(self):
         return self.nomeTag
 
+    
+
 class Publicacao(models.Model):
     titulo = models.CharField(max_length=50, verbose_name='Título')
     descricao = models.TextField(max_length=200, verbose_name='Descrição')

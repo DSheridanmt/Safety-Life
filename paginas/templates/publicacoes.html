@@ -15,7 +15,32 @@
                 </section> 
             </div>
         </div>
-    </div> 
+    </div>
 </header>
+<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+    <div class="d-flex justify-content-center bg-light bordaaa">
+        <div class="text-center">
+            <section class="text-center w-100 py-4 ">
+                <ul>
+                    {% for object in object_list %}
+                
+                    <li>{{object.titulo}}</li>
+                    <li>{{object.descricao}}</li>
+                    <li>{{object.hora}}</li>
+                    <li>{{object.tag}}</li>
+
+                    <hr/>
+                
+                    {% empty %}
+                    <li>Sem Publicações.</li>
+                    
+                    {% endfor %}
+                </ul>
+            </section> 
+        </div>
+    </div>
+</div>
 
 {% endblock conteudo %}
+
+<img src="{{ hotel.hotel_Main_Img.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
