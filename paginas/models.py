@@ -1,4 +1,5 @@
 from distutils.command.upload import upload
+from turtle import window_height
 from types import ClassMethodDescriptorType
 from unittest.util import _MAX_LENGTH
 import django
@@ -16,14 +17,13 @@ class Tag(models.Model):
     def __str__(self):
         return self.nomeTag
 
-    
-
 class Publicacao(models.Model):
     titulo = models.CharField(max_length=50, verbose_name='Título')
     descricao = models.TextField(max_length=200, verbose_name='Descrição')
     hora = models.DateField(auto_now_add=True)
+    imagem = models.ImageField(upload_to='arquivos')
     upload = models.FileField(upload_to='arquivos')
     tag = models.ForeignKey(Tag, on_delete=models.PROTECT)
-    
+
     def __str__(self):
         return self.titulo
