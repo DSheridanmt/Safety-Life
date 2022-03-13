@@ -339,6 +339,7 @@ label {
 
 button {
   border-radius: 0;
+  padding: 0px;
 }
 
 button:focus:not(:focus-visible) {
@@ -605,6 +606,12 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
+  
+}
+
+.img-fluid:hover{
+  filter:brightness(0.7);
 }
 
 .img-thumbnail {
