@@ -28,12 +28,12 @@ body{
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
-                <h1 class="mx-auto py-2 text-uppercase">Publicações</h1>
+                <h1 class="mx-auto my-0 text-uppercase">Publicações</h1>
                 <section class="text-center w-100 py-4 ">
-                    <p class="texto">
+                    <h2 class="text-black-100 mx-auto mt-2 mb-5">
                     Safety life é um site feito para você, que quer melhorar a sua saúde da forma mais simples e direta possível!
                     Esse site tem a proposta de levar até você receitas e exercícios que sejam benéficos e acessíveis. Vem com a gente!  
-                    </p>
+                    </h2>
                 </section> 
             </div>
         </div>
@@ -46,20 +46,23 @@ body{
                     {% for object in object_list %}
                 
                     <h4><b>{{object.titulo}}</b></h4> 
-                    <p>{{object.descricao}}</p>
-                    <h6><b>Data de publicação:</b> {{object.hora}}</h6>
                     <h6><b>Tag:</b> {{object.tag}}</h6>
-                    <h6><b>Link:</b> <a href="{{object.link.url}}", target="_blank"> {{ object.link }}</a></h6>
-
-                    {% if object.upload %}
-                    <h6><b>Arquivos para download:</b></h6>
-                    <li><a href="{{object.upload.url}}", target="_blank">  {{ object.upload.url }} </a></li>
-                    {% endif %}
 
                     {% if object.imagem %}
                     <div class="justify-content-center" id="publi">
-                        <td><img src="{{ object.imagem.url }}" widht="200" height="200"></td>
+                        <td><img class='mb-3 mb-lg-0' src="{{ object.imagem.url }}" widht="200" height="200"></td>
                     </div>
+                    {% endif %}
+
+                    
+
+                    <p>{{object.descricao}}</p>
+                    <h6><b>Data de publicação:</b> {{object.hora}}</h6>
+                    
+                    <h6><b>Link: </b> <a class='mt-2' href="{{object.link.url}}", target="_blank"> {{ object.link }}</a></h6>
+
+                    {% if object.upload %}
+                    <h6><b>Arquivo para download: </b><a href="{{object.upload.url}}", target="_blank">  {{ object.upload.url }}</h6>
                     {% endif %}
 
                     <hr style="height: 5px; background-color: #000000;"/>

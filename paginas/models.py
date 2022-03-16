@@ -21,7 +21,7 @@ class Tag(models.Model):
 
 class Publicacao(models.Model):
     titulo = models.CharField(max_length=50, verbose_name='Título', editable=True)
-    descricao = models.TextField(max_length=200, verbose_name='Descrição', editable=True)
+    descricao = models.TextField(max_length=5000, verbose_name='Descrição', editable=True)
     hora = models.DateTimeField(auto_now_add=True)
     imagem = models.ImageField(upload_to='arquivos', blank=True, verbose_name='Imagem', editable=True)
     upload = models.FileField(upload_to='arquivos', blank=True, verbose_name='Arquivo', editable=True)
