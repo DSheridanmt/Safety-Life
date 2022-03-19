@@ -1,120 +1,166 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block conteudo %}
+<!-- Masthead-->
+<header class="masthead">
+  <div
+    class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center"
+  >
+    <div class="d-flex justify-content-center">
+      <div class="text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Safety Life</h1>
+        <h2 class="text-black-50 mx-auto mt-2 mb-5">Uma vida mais saudável!</h2>
+        <a class="btn btn-primary" href="{% url 'sobre' %}">Explore agora!</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About-->
+<section class="about-section text-center" id="about">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-white mb-4">Criado para facilitar a sua vida!</h2>
+        <p class="text-white-50">
+          Safety life é um site feito para você, que quer melhorar a sua saúde
+          da forma mais simples e direta possível! Esse site tem a proposta de
+          levar até você receitas e exercícios que sejam benéficos e acessíveis.
+          Vem com a gente!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Projects-->
+<section class="projects-section bg-light" id="projects">
+  <div class="container px-4 px-lg-5">
+    <!-- Featured Project Row-->
+    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+      <div class="col-xl-8 col-lg-7">
+        <img
+          class="img-fluid mb-3 mb-lg-0"
+          src="{% static 'img/imagem-publicações.jpeg' %}"
+          alt="..."
+        />
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-center text-lg-left">
+          <h4>Publicações</h4>
+          <p class="text-black-50 mb-0">
+            O Safety Life disponibilizará publicações e artigos feitos por
+            profissionais da área da nutrição e da educação física.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Project One Row-->
+    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+      <div class="col-lg-6">
+        <a href="{% url 'publicacoes' %}">
+          <button type="image">
+            <img
+              class="img-fluid"
+              src="{%static 'img/imagem-exercícios.jpg' %}"
+              alt="..."
+            /></button
+        ></a>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">Exercícios</h4>
+              <p class="mb-0 text-white-50">
+                Exercícios práticos que utilizam o próprio peso do corpo e que
+                podem ser feitos em qualquer lugar.
+              </p>
+              <hr class="d-none d-lg-block mb-0 ms-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project Two Row-->
+    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+      <div class="col-lg-6">
+        <a href="/publicacoes">
+          <button type="image">
+            <img
+              class="img-fluid"
+              src="{%static 'img/imagem-receitas.jpg'%}"
+              alt="..."
+            /></button
+        ></a>
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-white">Receitas</h4>
+              <p class="mb-0 text-white-50">
+                Um plano alimentar é complicado, e as vezes sai caro. O Safety
+                Life vai disponibilizar receitas saudáveis e mais econômicas.
+              </p>
+              <hr class="d-none d-lg-block mb-0 me-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    
-    {% block conteudo %}
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Safety Life</h1>
-                        <h2 class="text-black-50 mx-auto mt-2 mb-5">Uma vida mais saudável!</h2>
-                        <a class="btn btn-primary" href="#about">Explore agora!</a>
-                    </div>
-                </div>
+<!-- Contact-->
+<section class="contact-section bg-black">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Endereço</h4>
+            <hr class="my-4 mx-auto" />
+            <div class="small text-black-50">
+              <a
+                href="https://www.google.com/maps/place/IFRN+-+Campus+Cear%C3%A1-Mirim/@-5.6513628,-35.4291725,15z/data=!4m5!3m4!1s0x0:0xf09f16a351cb3c61!8m2!3d-5.6513628!4d-35.4291725"
+                ,
+                target="_blank"
+                >IFRN - Campus Ceará-Mirim</a
+              >
             </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Criado para facilitar a sua vida!</h2>
-                        <p class="text-white-50">
-                            Safety life é um site feito para você, que quer melhorar a sua saúde da forma mais simples e direta possível!
-                            Esse site tem a proposta de levar até você receitas e exercícios que sejam benéficos e acessíveis. Vem com a gente!  
-                        </p>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-envelope text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Email</h4>
+            <hr class="my-4 mx-auto" />
+            <div class="small text-black-50">
+              <p>projeto.safetylife@gmail.com</p>
             </div>
-        </section>
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/imagem-publicações.jpeg' %}" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Publicações</h4>
-                            <p class="text-black-50 mb-0">O Safety Life disponibilizará publicações e artigos feitos por profissionais da área da nutrição e da educação física.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6" > <a href="/publicacoes"> <button type="image">  <img class="img-fluid" src="{%static 'img/imagem-exercícios.jpg' %}" alt="..." /></button></a></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Exercícios</h4>
-                                    <p class="mb-0 text-white-50">Exercícios práticos que utilizam o próprio peso do corpo e que podem ser feitos em qualquer lugar.</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Two Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><a href="/publicacoes"> <button type="image"> <img class="img-fluid" src="{%static 'img/imagem-receitas.jpg'%}" alt="..."/> </button></a></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Receitas</h4>
-                                    <p class="mb-0 text-white-50">Um plano alimentar é complicado, e as vezes sai caro. O Safety Life vai disponibilizar receitas saudáveis e mais econômicas.</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Endereço</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"> <a href="https://www.google.com/maps/place/IFRN+-+Campus+Cear%C3%A1-Mirim/@-5.6513628,-35.4291725,15z/data=!4m5!3m4!1s0x0:0xf09f16a351cb3c61!8m2!3d-5.6513628!4d-35.4291725",  target="_blank">IFRN - Campus Ceará-Mirim</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><p>projeto.safetylife@gmail.com</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Telefone</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><p>+55 84992181759</p></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://github.com/DSheridanmt/Safety-Life", target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section>
-  {% endblock conteudo %}
-
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Telefone</h4>
+            <hr class="my-4 mx-auto" />
+            <div class="small text-black-50"><p>+55 84992181759</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social d-flex justify-content-center">
+      <a
+        class="mx-2"
+        href="https://github.com/DSheridanmt/Safety-Life"
+        ,
+        target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+    </div>
+  </div>
+</section>
+{% endblock conteudo %}
